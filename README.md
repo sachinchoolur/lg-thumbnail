@@ -2,7 +2,7 @@
 ![bower](https://img.shields.io/bower/v/lg-thumbnail.svg)
 ![npm](https://img.shields.io/npm/v/lg-thumbnail.svg)
 
-# Thumbnail module for [lightgallery.js](http://sachinchoolur.github.io/lightgallery.js/)
+# Thumbnail module for [lightGallery](http://sachinchoolur.github.io/lightGallery/)
 Full featured javascript gallery. Zero dependencies.
 ![lightgallery](https://raw.githubusercontent.com/sachinchoolur/lightGallery/master/lib/lg.png)
 
@@ -44,7 +44,7 @@ Include lg-thumbnail plugin after lightgallery.min.js.
 ``` html
 <body>
    ---
-    <!-- Include lightgallery.js -->
+    <!-- Include lightGallery -->
     <script src="js/lightgallery.min.js"></script>
     
     <!-- Include lg-thumbnail -->
@@ -55,10 +55,10 @@ Include lg-thumbnail plugin after lightgallery.min.js.
 </body>  
 ```
 
-[Demos](http://sachinchoolur.github.io/lightgallery.js/demos/) 
+[Demos](http://sachinchoolur.github.io/lightGallery/demos/) 
 ----
   
-[Docs](http://sachinchoolur.github.io/lightgallery.js/docs/api.html#lg-thumbnail)
+[Docs](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-thumbnail)
 -----
 
 License
