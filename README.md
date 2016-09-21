@@ -61,7 +61,7 @@ Include lg-thumbnail plugin after lightgallery.min.js.
 [Docs](http://sachinchoolur.github.io/lightGallery/docs/api.html#lg-thumbnail)
 -----
 
-License
+<!--- License
 ---
 
 #### Commercial license
@@ -70,5 +70,5 @@ If you want to use lightGallery to develop commercial sites, themes, projects, a
 #### Open source license
 
 If you are creating an open source application under a license compatible with the GNU GPL license v3, you may use this project under the terms of the GPLv3.
-
+ -->
 
