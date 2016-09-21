@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/lg-thumbnail.svg)
 
 # Thumbnail module for [lightGallery](http://sachinchoolur.github.io/lightGallery/)
-Full featured javascript gallery. Zero dependencies.
+A customizable, modular, responsive, lightbox gallery plugin for jQuery.
 ![lightgallery](https://raw.githubusercontent.com/sachinchoolur/lightGallery/master/lib/lg.png)
 
 Main features
