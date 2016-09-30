@@ -1,4 +1,4 @@
-(function($, window, document, undefined) {
+(function() {
 
     'use strict';
 
@@ -448,4 +448,4 @@
 
     $.fn.lightGallery.modules.Thumbnail = Thumbnail;
 
-})(jQuery, window, document);
+})();
