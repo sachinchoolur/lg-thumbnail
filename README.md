@@ -39,6 +39,9 @@ $ npm install lg-thumbnail
 
 You can also directly download lg-thumbnail from github.
 
+#### CDN
+If you prefer to use a CDN you can load files via [jsdelivr](https://www.jsdelivr.com/projects/lg-thumbnail)
+
 #### Include Javascript files
 Include lg-thumbnail plugin after lightgallery.min.js.
 ``` html
