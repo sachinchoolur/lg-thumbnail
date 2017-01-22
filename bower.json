@@ -1,6 +1,6 @@
 {
   "name": "lg-thumbnail",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Thumbnail module for lightgallery.",
   "main": [
     "dist/lg-thumbnail.min.js"
