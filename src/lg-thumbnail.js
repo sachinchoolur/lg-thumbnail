@@ -165,10 +165,11 @@
         } else {
             _this.core.$items.each(function(i) {
 
+                var _src = $(this).attr('href') || $(this).attr('data-src') || $(this).attr('src');
                 if (!_this.core.s.exThumbImage) {
-                    getThumb($(this).attr('href') || $(this).attr('data-src'), $(this).find('img').attr('src'), i);
+                    getThumb(_src, $(this).filter('img').attr('src'), i);
                 } else {
-                    getThumb($(this).attr('href') || $(this).attr('data-src'), $(this).attr(_this.core.s.exThumbImage), i);
+                    getThumb(_src, $(this).attr(_this.core.s.exThumbImage), i);
                 }
 
             });
