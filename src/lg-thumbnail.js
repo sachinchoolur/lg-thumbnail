@@ -9,6 +9,7 @@
         currentPagerPosition: 'middle',
 
         thumbWidth: 100,
+        thumbHeight: '80px',
         thumbContHeight: 100,
         thumbMargin: 5,
 
@@ -43,6 +44,10 @@
         this.thumbOuterWidth = 0;
         this.thumbTotalWidth = (this.core.$items.length * (this.core.s.thumbWidth + this.core.s.thumbMargin));
         this.thumbIndex = this.core.index;
+
+        if (this.core.s.animateThumb) {
+            this.core.s.thumbHeight = '100%';
+        }
 
         // Thumbnail animation value
         this.left = 0;
@@ -154,7 +159,7 @@
                 thumbImg = thumb;
             }
 
-            thumbList += '<div data-vimeo-id="' + vimeoId + '" class="lg-thumb-item" style="width:' + _this.core.s.thumbWidth + 'px; margin-right: ' + _this.core.s.thumbMargin + 'px"><img src="' + thumbImg + '" /></div>';
+            thumbList += '<div data-vimeo-id="' + vimeoId + '" class="lg-thumb-item" style="width:' + _this.core.s.thumbWidth + 'px; height: ' + _this.core.s.thumbHeight + '; margin-right: ' + _this.core.s.thumbMargin + 'px"><img src="' + thumbImg + '" /></div>';
             vimeoId = '';
         }
 
