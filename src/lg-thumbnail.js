@@ -66,12 +66,12 @@
             }
 
             this.build();
-            if (this.core.s.animateThumb) {
-                if (this.core.s.enableThumbDrag && !this.core.isTouch && this.core.doCss()) {
+            if (this.core.s.animateThumb && this.core.doCss()) {
+                if (this.core.s.enableThumbDrag) {
                     this.enableThumbDrag();
                 }
 
-                if (this.core.s.enableThumbSwipe && this.core.isTouch && this.core.doCss()) {
+                if (this.core.s.enableThumbSwipe) {
                     this.enableThumbSwipe();
                 }
 
