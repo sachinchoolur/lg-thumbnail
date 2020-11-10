@@ -13,6 +13,7 @@
         thumbContHeight: 100,
         thumbMargin: 5,
 
+        elThumbHtml: 'data-thumb-html',
         exThumbImage: false,
         showThumbByDefault: true,
         toogleThumb: true,
@@ -163,6 +164,10 @@
             vimeoId = '';
         }
 
+        function getHtmlThumb(thumbEl) {
+            thumbList += '<div class="lg-thumb-item" style="width:' + _this.core.s.thumbWidth + 'px; margin-right: ' + _this.core.s.thumbMargin + 'px">' + $(thumbEl).html() + '</div>';
+        }
+
         if (_this.core.s.dynamic) {
             for (var i = 0; i < _this.core.s.dynamicEl.length; i++) {
                 getThumb(_this.core.s.dynamicEl[i].src, _this.core.s.dynamicEl[i].thumb, i);
@@ -170,12 +175,13 @@
         } else {
             _this.core.$items.each(function(i) {
 
-                if (!_this.core.s.exThumbImage) {
+                if ($(this).attr(_this.core.s.elThumbHtml)) {
+                    getHtmlThumb($(this).attr(_this.core.s.elThumbHtml));
+                } else if (!_this.core.s.exThumbImage) {
                     getThumb($(this).attr('href') || $(this).attr('data-src'), $(this).find('img').attr('src'), i);
                 } else {
                     getThumb($(this).attr('href') || $(this).attr('data-src'), $(this).attr(_this.core.s.exThumbImage), i);
                 }
-
             });
         }
 
