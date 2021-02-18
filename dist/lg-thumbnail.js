@@ -1,6 +1,6 @@
-/*! lg-thumbnail - v1.2.1 - 2020-06-13
+/*! lg-thumbnail - v1.2.1 - 2021-02-18
 * http://sachinchoolur.github.io/lightGallery
-* Copyright (c) 2020 Sachin N; Licensed GPLv3 */
+* Copyright (c) 2021 Sachin N; Licensed GPLv3 */
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
@@ -474,5 +474,6 @@
     $.fn.lightGallery.modules.Thumbnail = Thumbnail;
 
 })();
+
 
 }));
