@@ -1,6 +1,6 @@
-/*! lg-thumbnail - v1.2.1 - 2020-06-13
+/*! lg-thumbnail - v1.2.1 - 2021-02-18
 * http://sachinchoolur.github.io/lightGallery
-* Copyright (c) 2020 Sachin N; Licensed GPLv3 */
+* Copyright (c) 2021 Sachin N; Licensed GPLv3 */
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
@@ -209,10 +209,10 @@
             var vimeoVideoId = $this.attr('data-vimeo-id');
 
             if (vimeoVideoId) {
-                $.getJSON('//www.vimeo.com/api/v2/video/' + vimeoVideoId + '.json?callback=?', {
+                $.getJSON('//vimeo.com/api/oembed.json?url=https%3A//vimeo.com/' + vimeoVideoId, {
                     format: 'json'
                 }, function(data) {
-                    $this.find('img').attr('src', data[0][_this.core.s.vimeoThumbSize]);
+                    $this.find('img').attr('src', data.thumbnail_url);
                 });
             }
         });
@@ -474,5 +474,6 @@
     $.fn.lightGallery.modules.Thumbnail = Thumbnail;
 
 })();
+
 
 }));
